@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SnackMapEntwurfApp: App {
+    @StateObject private var vendingMachineViewModel = VendingMachineViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(vendingMachineViewModel)
         }
     }
 }

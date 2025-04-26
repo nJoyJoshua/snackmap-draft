@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            MapView()
+            MapView(showSheet: $showSheet)
         }
         .sheet(isPresented: $showSheet) {
             SheetView(currentDetent: $currentDetent)
@@ -31,4 +31,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(VendingMachineViewModel())
 }
