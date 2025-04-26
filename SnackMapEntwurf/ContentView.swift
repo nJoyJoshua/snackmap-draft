@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showSheet = true
+    @State var currentDetent: PresentationDetent = .height(50)
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            MapView()
         }
-        .padding()
+        .sheet(isPresented: $showSheet) {
+            SheetView(currentDetent: $currentDetent)
+                .presentationDetents(
+                    [.height(50), .medium, .large],
+                    selection: $currentDetent
+                )
+                .presentationDragIndicator(.visible)
+                .interactiveDismissDisabled(true)
+                .presentationBackgroundInteraction(.enabled)
+        }
     }
 }
 
