@@ -9,7 +9,7 @@ import Foundation
 import MapKit
 import SwiftUICore
 
-class VendingMachine: Identifiable, Hashable, Equatable{
+struct VendingMachine: Identifiable, Hashable, Equatable {
     var id: UUID
     var name: String
     var latitude: Double
