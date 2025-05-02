@@ -10,19 +10,11 @@ import MapKit
 import SwiftUICore
 
 struct VendingMachine: Identifiable, Hashable, Equatable {
-    var id: UUID
+    var id: UUID = UUID()
     var name: String
     var latitude: Double
     var longitude: Double
     var category: VendingCategory
-    
-    init(id: UUID = UUID(), name: String, latitude: Double, longitude: Double, category: VendingCategory) {
-        self.id = id
-        self.name = name
-        self.latitude = latitude
-        self.longitude = longitude
-        self.category = category
-    }
     
     var coordinates : CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)

@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 class VendingMachineViewModel: ObservableObject {
     
     @Published var machines: [VendingMachine] = []
@@ -74,6 +75,10 @@ class VendingMachineViewModel: ObservableObject {
                 category: .drinks
             )
         ]
+    }
+    
+    func addMachine(machine: VendingMachine) {
+        machines.append(machine)
     }
     
 }

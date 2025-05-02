@@ -6,37 +6,57 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct MachineDetailView: View {
-    @Binding var isPresented: Bool
     
     @Binding var machine: VendingMachine?
     
+    @State private var lookAroundScene: MKLookAroundScene?
+    
+    @EnvironmentObject private var sheetRouter: SheetRouter
+    
     var body: some View {
-        ZStack(alignment: .topTrailing) {
             ScrollView {
                 VStack(alignment: .leading) {
-                    Text(machine?.name ?? "Something went wrong...")
-                        .font(.headline)
+                    Text(machine?.name ?? "Etwas ist schiefgelaufen...")
+                        .font(.title)
+                        .bold()
                     Text(machine?.category.displayName ?? "")
-                        .font(.caption)
+                        .font(.title3)
+                    
+                    if let scene = lookAroundScene {
+                        LookAroundPreview(initialScene: scene)
+                            .frame(height: 200)
+                            .cornerRadius(10)
+                            .padding(.top, 8)
+                    } else {
+                        ContentUnavailableView("Keine Preview Verfügbar", systemImage: "eye.slash")
+                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding()
+                .padding()
+                .onAppear {
+                    fetchLookAroundScene()
+                }
             }
-            Button(action: { isPresented = false }) {
-                Image(systemName: "xmark.circle.fill")
-                    .font(.system(size: 28))
-                    .symbolRenderingMode(.hierarchical)
-                    .foregroundColor(.gray)
-                    .padding(16)
+            .onChange(of: sheetRouter.current) {
+                machine = nil
             }
+    }
+    
+    private func fetchLookAroundScene() {
+        guard let machine = machine else { return }
+        lookAroundScene = nil
+        Task {
+            let request = MKLookAroundSceneRequest(coordinate: machine.coordinates)
+            lookAroundScene = try? await request.scene
         }
-
+        
     }
 }
 
 #Preview {
-    let machine = VendingMachine(name: "Test", latitude: 23.424, longitude: 23.424, category: .farmers)
-    MachineDetailView(isPresented: .constant(true), machine: .constant(machine))
+    let machine = VendingMachine(name: "Grillimbiss - Schule", latitude: 23.424, longitude: 23.424, category: .grill)
+    MachineDetailView(machine: .constant(machine))
 }
