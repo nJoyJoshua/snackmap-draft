@@ -69,7 +69,7 @@ struct ContentView: View {
                 }
             } else {
                 Button(action: {
-                    router.present(sheet: .recommendations)
+                    router.present(sheet: .recommendations, detent: .height(50))
                 }) {
                     Image(systemName: "xmark.circle.fill")
                         .font(.system(size: 28))

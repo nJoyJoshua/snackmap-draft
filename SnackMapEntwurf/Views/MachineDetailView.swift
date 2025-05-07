@@ -33,6 +33,34 @@ struct MachineDetailView: View {
                     } else {
                         ContentUnavailableView("Keine Preview Verfügbar", systemImage: "eye.slash")
                     }
+                    
+                    HStack {
+                        Button {
+                            print("Thumbs up")
+                        } label: {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(Color.accentColor)
+                                Image(systemName: "hand.thumbsup")
+                                    .foregroundStyle(.white)
+                                    .font(.title)
+                            }
+                        }
+                        .buttonStyle(.plain)
+                        Button {
+                            print("thumbs down")
+                        } label: {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(Color(.systemGray3))
+                                Image(systemName: "hand.thumbsdown")
+                                    .foregroundStyle(.white)
+                                    .font(.title)
+                            }
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    .frame(height: 80)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
@@ -59,4 +87,5 @@ struct MachineDetailView: View {
 #Preview {
     let machine = VendingMachine(name: "Grillimbiss - Schule", latitude: 23.424, longitude: 23.424, category: .grill)
     MachineDetailView(machine: .constant(machine))
+        .environmentObject(SheetRouter())
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 enum AppSheet: Identifiable, Equatable {
     static func == (lhs: AppSheet, rhs: AppSheet) -> Bool {
-        return lhs.displayName == rhs.displayName
+        return lhs.id == rhs.id
     }
     
     case recommendations

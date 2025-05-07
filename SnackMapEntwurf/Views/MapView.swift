@@ -28,15 +28,18 @@ struct MapView: View {
         .mapControls{
             MapCompass()
             MapUserLocationButton()
- 
+            
         }
         .onChange(of: mapSelection, {
             if mapSelection != nil {
                 sheetRouter.present(sheet: .machineDetail(machine: $mapSelection), detent: .medium)
-
+                
             }
             
         })
+        .onAppear {
+            vendingMachineViewModel.fetchMachines()
+        }
     }
 }
 

@@ -11,9 +11,10 @@ import SwiftUI
 struct SnackMapEntwurfApp: App {
     @StateObject private var vendingMachineViewModel = VendingMachineViewModel()
     @StateObject private var userLocationService = UserLocationService()
+    
     @StateObject private var supplierNotificationViewModel = SupplierNotificationViewModel()
     @StateObject private var router = SheetRouter()
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

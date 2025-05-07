@@ -43,5 +43,5 @@ class UserLocationService: NSObject, ObservableObject, CLLocationManagerDelegate
     }
     
     
-
+    
 }
