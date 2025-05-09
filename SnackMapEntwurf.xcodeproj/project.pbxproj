@@ -6,43 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		7170AA352DCB688200AAB0FE /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA1F2DCB688200AAB0FE /* MockData.swift */; };
-		7170AA362DCB688200AAB0FE /* SupplierNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA212DCB688200AAB0FE /* SupplierNotification.swift */; };
-		7170AA372DCB688200AAB0FE /* VendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA222DCB688200AAB0FE /* VendingMachine.swift */; };
-		7170AA382DCB688200AAB0FE /* SheetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA242DCB688200AAB0FE /* SheetRouter.swift */; };
-		7170AA392DCB688200AAB0FE /* UserLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA252DCB688200AAB0FE /* UserLocationService.swift */; };
-		7170AA3A2DCB688200AAB0FE /* SupplierNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA272DCB688200AAB0FE /* SupplierNotificationViewModel.swift */; };
-		7170AA3B2DCB688200AAB0FE /* VendingMachineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA282DCB688200AAB0FE /* VendingMachineViewModel.swift */; };
-		7170AA3C2DCB688200AAB0FE /* CreateVendingMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA2A2DCB688200AAB0FE /* CreateVendingMachineView.swift */; };
-		7170AA3D2DCB688200AAB0FE /* MachineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA2B2DCB688200AAB0FE /* MachineDetailView.swift */; };
-		7170AA3E2DCB688200AAB0FE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA2C2DCB688200AAB0FE /* MapView.swift */; };
-		7170AA3F2DCB688200AAB0FE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA2D2DCB688200AAB0FE /* ProfileView.swift */; };
-		7170AA402DCB688200AAB0FE /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA2E2DCB688200AAB0FE /* RecommendationView.swift */; };
-		7170AA412DCB688200AAB0FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA312DCB688200AAB0FE /* ContentView.swift */; };
-		7170AA422DCB688200AAB0FE /* SnackMapEntwurfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170AA332DCB688200AAB0FE /* SnackMapEntwurfApp.swift */; };
-		7170AA432DCB688200AAB0FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7170AA302DCB688200AAB0FE /* Assets.xcassets */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		7170AA1F2DCB688200AAB0FE /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		7170AA212DCB688200AAB0FE /* SupplierNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierNotification.swift; sourceTree = "<group>"; };
-		7170AA222DCB688200AAB0FE /* VendingMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendingMachine.swift; sourceTree = "<group>"; };
-		7170AA242DCB688200AAB0FE /* SheetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetRouter.swift; sourceTree = "<group>"; };
-		7170AA252DCB688200AAB0FE /* UserLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationService.swift; sourceTree = "<group>"; };
-		7170AA272DCB688200AAB0FE /* SupplierNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierNotificationViewModel.swift; sourceTree = "<group>"; };
-		7170AA282DCB688200AAB0FE /* VendingMachineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendingMachineViewModel.swift; sourceTree = "<group>"; };
-		7170AA2A2DCB688200AAB0FE /* CreateVendingMachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVendingMachineView.swift; sourceTree = "<group>"; };
-		7170AA2B2DCB688200AAB0FE /* MachineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineDetailView.swift; sourceTree = "<group>"; };
-		7170AA2C2DCB688200AAB0FE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		7170AA2D2DCB688200AAB0FE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		7170AA2E2DCB688200AAB0FE /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
-		7170AA302DCB688200AAB0FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7170AA312DCB688200AAB0FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7170AA322DCB688200AAB0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7170AA332DCB688200AAB0FE /* SnackMapEntwurfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackMapEntwurfApp.swift; sourceTree = "<group>"; };
 		C171D9F42DBBA07100A51EA0 /* SnackMapEntwurf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnackMapEntwurf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C171D9F62DBBA07100A51EA0 /* SnackMapEntwurf */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SnackMapEntwurf;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C171D9F12DBBA07100A51EA0 /* Frameworks */ = {
@@ -55,73 +29,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7170AA202DCB688200AAB0FE /* MockData */ = {
-			isa = PBXGroup;
-			children = (
-				7170AA1F2DCB688200AAB0FE /* MockData.swift */,
-			);
-			path = MockData;
-			sourceTree = "<group>";
-		};
-		7170AA232DCB688200AAB0FE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				7170AA212DCB688200AAB0FE /* SupplierNotification.swift */,
-				7170AA222DCB688200AAB0FE /* VendingMachine.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		7170AA262DCB688200AAB0FE /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				7170AA242DCB688200AAB0FE /* SheetRouter.swift */,
-				7170AA252DCB688200AAB0FE /* UserLocationService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		7170AA292DCB688200AAB0FE /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				7170AA272DCB688200AAB0FE /* SupplierNotificationViewModel.swift */,
-				7170AA282DCB688200AAB0FE /* VendingMachineViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		7170AA2F2DCB688200AAB0FE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7170AA2A2DCB688200AAB0FE /* CreateVendingMachineView.swift */,
-				7170AA2B2DCB688200AAB0FE /* MachineDetailView.swift */,
-				7170AA2C2DCB688200AAB0FE /* MapView.swift */,
-				7170AA2D2DCB688200AAB0FE /* ProfileView.swift */,
-				7170AA2E2DCB688200AAB0FE /* RecommendationView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		7170AA342DCB688200AAB0FE /* SnackMapEntwurf */ = {
-			isa = PBXGroup;
-			children = (
-				7170AA202DCB688200AAB0FE /* MockData */,
-				7170AA232DCB688200AAB0FE /* Models */,
-				7170AA262DCB688200AAB0FE /* Services */,
-				7170AA292DCB688200AAB0FE /* ViewModels */,
-				7170AA2F2DCB688200AAB0FE /* Views */,
-				7170AA302DCB688200AAB0FE /* Assets.xcassets */,
-				7170AA312DCB688200AAB0FE /* ContentView.swift */,
-				7170AA322DCB688200AAB0FE /* Info.plist */,
-				7170AA332DCB688200AAB0FE /* SnackMapEntwurfApp.swift */,
-			);
-			path = SnackMapEntwurf;
-			sourceTree = "<group>";
-		};
 		C171D9EB2DBBA07100A51EA0 = {
 			isa = PBXGroup;
 			children = (
-				7170AA342DCB688200AAB0FE /* SnackMapEntwurf */,
+				C171D9F62DBBA07100A51EA0 /* SnackMapEntwurf */,
 				C171D9F52DBBA07100A51EA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +59,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C171D9F62DBBA07100A51EA0 /* SnackMapEntwurf */,
 			);
 			name = SnackMapEntwurf;
 			packageProductDependencies = (
@@ -195,7 +109,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7170AA432DCB688200AAB0FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,20 +119,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7170AA352DCB688200AAB0FE /* MockData.swift in Sources */,
-				7170AA362DCB688200AAB0FE /* SupplierNotification.swift in Sources */,
-				7170AA372DCB688200AAB0FE /* VendingMachine.swift in Sources */,
-				7170AA382DCB688200AAB0FE /* SheetRouter.swift in Sources */,
-				7170AA392DCB688200AAB0FE /* UserLocationService.swift in Sources */,
-				7170AA3A2DCB688200AAB0FE /* SupplierNotificationViewModel.swift in Sources */,
-				7170AA3B2DCB688200AAB0FE /* VendingMachineViewModel.swift in Sources */,
-				7170AA3C2DCB688200AAB0FE /* CreateVendingMachineView.swift in Sources */,
-				7170AA3D2DCB688200AAB0FE /* MachineDetailView.swift in Sources */,
-				7170AA3E2DCB688200AAB0FE /* MapView.swift in Sources */,
-				7170AA3F2DCB688200AAB0FE /* ProfileView.swift in Sources */,
-				7170AA402DCB688200AAB0FE /* RecommendationView.swift in Sources */,
-				7170AA412DCB688200AAB0FE /* ContentView.swift in Sources */,
-				7170AA422DCB688200AAB0FE /* SnackMapEntwurfApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +177,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -336,7 +234,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -357,9 +254,6 @@
 				DEVELOPMENT_TEAM = N75LH2B753;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SnackMapEntwurf/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -388,9 +282,6 @@
 				DEVELOPMENT_TEAM = N75LH2B753;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SnackMapEntwurf/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

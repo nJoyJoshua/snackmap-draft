@@ -24,7 +24,7 @@ struct MapView: View {
                     .tint(machine.category.color)
             }
         }
-        .mapStyle(.hybrid)
+        .mapStyle(.imagery)
         .mapControls{
             MapCompass()
             MapUserLocationButton()
