@@ -19,7 +19,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showSheet) {
             sheetView(for: router.current)
-                .presentationDetents([.height(50), .medium, .large], selection: $router.currentDetent)
+                .presentationDetents([.height(50), .medium, .fraction(0.999)], selection: $router.currentDetent)
                 .presentationDragIndicator(.visible)
                 .interactiveDismissDisabled(true)
                 .presentationBackgroundInteraction(.enabled)
@@ -31,7 +31,6 @@ struct ContentView: View {
     @ViewBuilder
     func sheetView(for sheet: AppSheet) -> some View {
         ScrollView {
-            
             HStack{
                 Text(sheet.displayName)
                     .foregroundStyle(.primary)
@@ -40,7 +39,7 @@ struct ContentView: View {
                 Spacer()
             if sheet == .recommendations {
                 Button(action: {
-                    router.present(sheet: .createMachine, detent: .large)
+                    router.present(sheet: .createMachine, detent: .fraction(0.999))
                 }) {
                     Image(systemName: "plus.circle")
                         .font(.system(size: 28))
@@ -48,7 +47,7 @@ struct ContentView: View {
                 }
                 
                 Button ( action: {
-                    router.present(sheet: .profile, detent: .large)
+                    router.present(sheet: .profile, detent: .fraction(0.999))
                 } ) {
                     Image(systemName: "person.circle")
                         .font(.system(size: 28))
@@ -74,7 +73,7 @@ struct ContentView: View {
                     Image(systemName: "xmark.circle.fill")
                         .font(.system(size: 28))
                         .symbolRenderingMode(.hierarchical)
-                        .foregroundColor(.gray)
+                        .foregroundStyle(.gray)
                         .padding(16)
                 }
             }
